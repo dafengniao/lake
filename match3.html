@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0">
+		<meta name="title" content="国际半程马拉松赛" />
+		<meta name="keywords" content="国际半程马拉松赛"/>
+		<meta name="description" content="国际半程马拉松赛" />
+		<meta content="国际半程马拉松赛" name="author" />
+		<title>国际半程马拉松赛</title>
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<style type="text/css">
+			body {
+			    color: #5d6266;
+			    min-width: 320px;
+				margin: 0;
+				font-size: 14px;
+				font-family: "Microsoft YaHei",tahoma,arial,"Hiragino Sans GB",宋体,sans-serif;
+			}
+			.ui.header .logo .w-logo{
+				background:url(./images/logo.jpg) no-repeat center center scroll;
+			}
+			.ui.header .logo .w-address{
+				background:url(./images/address.jpg) no-repeat center center scroll;
+			}
+			
+			.ui.checkbox {
+				position: relative;
+				display: block;
+				margin: 15px 0;
+				min-width: 1em;
+				height: 1.25em;
+				line-height: 1em;
+				outline: 0;
+				vertical-align: middle;
+			}
+			.ui.checkbox input {
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				outline: 0;
+			}
+			.ui.checkbox label {
+				color: rgba(0,0,0,.6);
+				-webkit-transition: color .2s ease;
+				transition: color .2s ease;
+			}
+			.ui.checkbox label {
+				cursor: pointer;
+				margin-left: 2.5em;
+				outline: 0;
+			}
+			.ui.radio.checkbox label:before {
+				min-width: 1em;
+				height: 1em;
+				border-radius: 500px;
+			}
+			.ui.checkbox label:before {
+				position: absolute;
+				top: 0;
+				line-height: 1;
+				width: 1em;
+				height: 1em;
+				left: 0;
+				content: '';
+				border-radius: 4px;
+				background: #FFF;
+				-webkit-transition: background-color .3s ease,-webkit-box-shadow .3s ease;
+				transition: background-color .3s ease,box-shadow .3s ease;
+				-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+				box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+			}
+			.ui.checkbox input:checked+label:after {
+				-ms-filter: "alpha(Opacity=100)";
+				filter: alpha(opacity=100);
+				opacity: 1;
+			}
+			.ui.radio.checkbox label:after {
+			border: 0;
+		top: .2em;
+		left: .2em;
+		width: .6em;
+		height: .6em;
+		background-color: #555;
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
+		border-radius: 500px;
+			}
+			.ui.checkbox label:after {
+				top: .275em;
+				left: .2em;
+				width: .45em;
+				height: .15em;
+			}
+			.ui.checkbox label:after {
+				-ms-filter: "alpha(Opacity=0)";
+				filter: alpha(opacity=0);
+				opacity: 0;
+				content: '';
+				position: absolute;
+				background: transparent;
+				border: .2em solid #333;
+				border-top: 0;
+				border-right: 0;
+				-webkit-transform: rotate(-45deg);
+				-ms-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+			}
+			
+		</style>
+		<link rel="stylesheet" href="./css/base.css" type="text/css" />
+	</head>
+
+	<body>
+		<header class="ui header">
+			<div class="ui top">
+				<div class="ui responsive grid">
+					<div class="china">中文/EN</div>
+					<div class="float right">
+						<a class="ui btn login" href="">登录</a>
+						<a class="ui btn green active sign" href="">注册</a>
+					</div>
+				</div>
+			</div>
+			<div class="logo">
+				<div class="ui responsive grid">
+					<div class="w-logo"></div>
+					<div class="w-address"></div>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="ui responsive grid">
+					<ul class="nav">
+						<li><a href=""></a>首页</li>
+						<li class="active hov"><a href=""></a>赛事信息
+							<div class="sect-menu">
+								<div><a href=""></a>参赛规则</div>
+								<div><a href=""></a>主办单位</div>
+								<div><a href=""></a>参赛公告</div>
+							</div>
+						</li>
+						
+						<li><a href=""></a>新闻中心</li>
+						<li><a href=""></a>合作伙伴</li>
+						<li><a href=""></a>志愿者</li>
+						<li><a href=""></a>配套活动</li>
+						<li><a href=""></a>关于我们</li>
+						<li><a href=""></a>参赛服务</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		
+		<div class="match1 match3">
+			<div class="ui responsive white background grid">
+				<div class="w-left">
+					<div class="ui center aligned">
+						<div class="border">
+							<div class="pb">选择参赛项目</div>
+							<div class="choose">
+								<div class="ui radio checkbox">
+									<input type="radio" checked="">
+								  <label>半程马拉松（21.0975KM）</label>
+								</div>
+								<div class="ui radio checkbox">
+									<input type="radio">
+									<label>短程马拉松（12KM）</label>
+								</div>
+								<div class="ui radio checkbox">
+									<input type="radio">
+									<label>迷你马拉松（3.5KM）</label>
+								</div>
+								<div class="ui radio checkbox">
+									<input type="radio">
+									<label>高校团体马拉松</label>
+								</div>
+							</div>
+							
+							<div class="ui center aligned mt-20">
+								<a  class="ui next active btn" href="">下一步</a>
+							</div>
+						</div>
+						
+						
+				
+					</div>
+				</div>
+				
+				
+				
+				<div class="w-right">
+					<div class="times">
+						<h3 class="ui header">比赛倒计时</h3>
+						<div class="day">
+							31
+							<span>天</span>
+						</div>
+						<div class="day">
+							3
+							<span>小时</span>
+						</div>
+						<div class="day">
+							30
+							<span>分</span>
+						</div>
+						<div class="day">
+							36
+							<span>秒</span>
+						</div>
+					</div>
+					
+					<div class="media-sign">
+						<a href=""></a><h3 class="ui header">媒体注册</h3>
+					</div>
+					<div class="zhiyuan-sign">
+						<a href=""></a><h3 class="ui header">志愿者注册</h3>
+					</div>
+					
+					<div class="mt-20 check">
+						<a href=""class="math">参赛号码查询</a>
+						<a href="" class="ever active">成绩查询</a>
+						<a href="" class="ever">成绩证书下载</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="ft">
+			<div class="ui responsive grid">
+				<div>主办单位：浙江省体育局 宁波市镇海区人民政府</div>
+				<div>承办单位：宁波镇海区体育局、宁波镇海区风景旅游局、宁波镇海区经济合作局、宁波镇海区九龙湖旅游度假区管委会</div>
+				<div>赛事运营：宁波互通有无文化传播有限公司</div>
+			</div>
+		</div>
+		
+	</body>
+		
+</html>
