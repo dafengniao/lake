@@ -437,10 +437,19 @@ h3.ui.header{
 	padding: 1em 0;
 }
 .match3 .choose{
-	width: 300px;
+	width: 350px;
 	margin: 0 auto;
 	text-align: left;
 	margin-bottom: 4em;
+}
+.match3 .choose .ui.radio{
+	padding: 5px 0;
+}
+.match3 .choose .ui.radio input[type="radio"]:hover{
+	cursor:pointer;
+}
+.match3 .choose .ui.radio:nth-child(3) input[type="radio"]:hover{
+	cursor:default;
 }
 
 
@@ -637,6 +646,36 @@ p.next{
 .dropdown.w-207{
 	width:207px;
 	margin-left:5px;
+}
+.dropdown.w-60,.input_box.w-60{
+	width:60px;
+}
+.put.w-500{
+	width:500px;
+}
+.item.line-17{
+	line-height:17px;
+}
+.dropdown.w-208{
+	width:208px;
+	margin-left:5px;
+}
+.item.cho{
+	width: 100%;
+	text-align: left;
+	height: 20px;
+}
+.item.cho + .input_box{
+	height: 35px;
+}
+/*.item.cho + .input_box .ui.radio{
+	margin: 2px 0;
+}*/
+.ml-5{
+	margin-left:5px;
+}
+.input_box.w-518,.put.w-518{
+	width:518px;
 }
 
 

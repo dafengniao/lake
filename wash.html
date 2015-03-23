@@ -25,91 +25,6 @@
 				background:url(./images/address.jpg) no-repeat center center scroll;
 			}
 			
-			.ui.checkbox {
-				position: relative;
-				display: block;
-				margin: 15px 0;
-				min-width: 1em;
-				height: 1.25em;
-				line-height: 1em;
-				outline: 0;
-				vertical-align: middle;
-			}
-			.ui.checkbox input {
-				position: absolute;
-				top: 0;
-				left: 0;
-				opacity: 0;
-				outline: 0;
-			}
-			.ui.checkbox label {
-				color: rgba(0,0,0,.6);
-				-webkit-transition: color .2s ease;
-				transition: color .2s ease;
-			}
-			.ui.checkbox label {
-				cursor: pointer;
-				margin-left: 2.5em;
-				outline: 0;
-			}
-			.ui.radio.checkbox label:before {
-				min-width: 1em;
-				height: 1em;
-				border-radius: 500px;
-			}
-			.ui.checkbox label:before {
-				position: absolute;
-				top: 0;
-				line-height: 1;
-				width: 1em;
-				height: 1em;
-				left: 0;
-				content: '';
-				border-radius: 4px;
-				background: #FFF;
-				-webkit-transition: background-color .3s ease,-webkit-box-shadow .3s ease;
-				transition: background-color .3s ease,box-shadow .3s ease;
-				-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.2);
-				box-shadow: 0 0 0 1px rgba(0,0,0,.2);
-			}
-			.ui.checkbox input:checked+label:after {
-				-ms-filter: "alpha(Opacity=100)";
-				filter: alpha(opacity=100);
-				opacity: 1;
-			}
-			.ui.radio.checkbox label:after {
-				border: 0;
-				top: .2em;
-				left: .2em;
-				width: .6em;
-				height: .6em;
-				background-color: #555;
-				-webkit-transform: none;
-				-ms-transform: none;
-				transform: none;
-				border-radius: 500px;
-			}
-			.ui.checkbox label:after {
-				top: .275em;
-				left: .2em;
-				width: .45em;
-				height: .15em;
-			}
-			.ui.checkbox label:after {
-				-ms-filter: "alpha(Opacity=0)";
-				filter: alpha(opacity=0);
-				opacity: 0;
-				content: '';
-				position: absolute;
-				background: transparent;
-				border: .2em solid #333;
-				border-top: 0;
-				border-right: 0;
-				-webkit-transform: rotate(-45deg);
-				-ms-transform: rotate(-45deg);
-				transform: rotate(-45deg);
-			}
-			
 			.media-sign{
 				height:55px;
 				background:url(./images/media.jpg);
@@ -132,8 +47,8 @@
 				<div class="ui responsive grid">
 					<div class="china">中文/EN</div>
 					<div class="float right">
-						<a class="ui btn login" href="">登录</a>
-						<a class="ui btn green active sign" href="">注册</a>
+						<a class="ui btn login" href="./login.html">登录</a>
+						<a class="ui btn green active sign" href="./register.html">注册</a>
 					</div>
 				</div>
 			</div>
@@ -146,7 +61,7 @@
 			<div class="menu">
 				<div class="ui responsive grid">
 					<ul class="nav">
-						<li><a href=""></a>首页</li>
+						<li><a href="./home.html"></a>首页</li>
 						<li class="active hov"><a href=""></a>赛事信息
 							<div class="sect-menu">
 								<div><a href=""></a>参赛规则</div>
@@ -187,20 +102,20 @@
 						<div class="border">
 							<div class="pb">选择参赛项目</div>
 							<div class="choose">
-								<div class="ui radio checkbox">
-									<input type="radio" checked="">
+								<div class="ui radio">
+									<input type="radio" checked="" name="type" vasult="1">
 								  <label>赛事志愿者</label>
 								</div>
-								<div class="ui radio checkbox">
-									<input type="radio">
+								<div class="ui radio">
+									<input type="radio" name="type" vasult="2">
 									<label>医护志愿者（须有相关专业技能）</label>
 								</div>
-								<div class="ui radio checkbox">
-									<input type="radio">
+								<div class="ui radio">
+									<input type="radio" name="type" vasult="3">
 									<label>裁判志愿者（须有相关专业技能）</label>
 								</div>
-								<div class="ui radio checkbox">
-									<input type="radio">
+								<div class="ui radio">
+									<input type="radio" name="type" vasult="4">
 									<label>摄影志愿者</label>
 								</div>
 							</div>
@@ -215,7 +130,7 @@
 							<div class="fuild">
 								<div class="item"> 证件</div>
 								<div class="input_box">
-									<input class="put" type="text"  maxlength="24" autocomplete="off">
+									<input class="put" type="text">
 								</div>
 							</div>
 							
@@ -223,9 +138,9 @@
 								<div class="item">性别</div>
 								<div class="input_box w-150">
 									<div class="ui radio">
-										<input type="radio">
+										<input type="radio" name="sex" vasult="1" checked="">
 										<label>男</label>
-										<input type="radio">
+										<input type="radio" name="sex" vasult="2">
 										<label>女</label>
 									</div>
 								</div>
@@ -362,10 +277,10 @@
 					</div>
 
 					<div class="media-sign">
-						<a href=""></a><h3 class="ui header">媒体注册</h3>
+						<a href="./media.html"></a><h3 class="ui header">媒体注册</h3>
 					</div>
 					<div class="zhiyuan-sign">
-						<a href=""></a><h3 class="ui header">志愿者注册</h3>
+						<a href="./wash.html"></a><h3 class="ui header">志愿者注册</h3>
 					</div>
 
 					<div class="mt-20 check">

@@ -47,8 +47,8 @@
 				<div class="ui responsive grid">
 					<div class="china">中文/EN</div>
 					<div class="float right">
-						<a class="ui btn login" href="">登录</a>
-						<a class="ui btn green active sign" href="">注册</a>
+						<a class="ui btn login" href="./login.html">登录</a>
+						<a class="ui btn green active sign" href="./register.html">注册</a>
 					</div>
 				</div>
 			</div>
@@ -64,7 +64,7 @@
 						<li><a href=""></a>首页</li>
 						<li class="active hov"><a href=""></a>赛事信息
 							<div class="sect-menu">
-								<div><a href=""></a>参赛规则</div>
+								<div><a href="./home.html"></a>参赛规则</div>
 								<div><a href=""></a>主办单位</div>
 								<div><a href=""></a>参赛公告</div>
 							</div>
@@ -89,7 +89,7 @@
 							媒体注册
 						</div>
 						
-						<div class="box">
+						<div class="box box-2 box-3">
 							<div class="fuild">
 								<div class="item"> 媒体名称:</div>
 								<div class="input_box">
@@ -152,33 +152,149 @@
 							
 							<div class="fuild">
 								<div class="item">记者姓名:</div>
-								
+								<div class="input_box w-120">
+									<input style="margin-left:5px;" class="put w-120" type="text">
+								</div>
+								<div class="item" style="margin-left: 10px;">报名记者数:</div>
+								<div class="input_box w-60">
+									<select class="dropdown w-60">
+									    <option value="1">男</option>
+									    <option value="2">女</option>
+									</select>
+								</div>
+								<div class="item">职务:</div>
+								<div class="input_box w-120">
+									<input style="margin-left:5px;" class="put w-120" type="text">
+								</div>
 							</div>
 							
-							
-							
-							
-						</div>
-						
-						<div class="box box-2 box-3">
 							<div class="fuild">
-								<div class="left-xx pt-0" style="width: 170px;">
-									<p class="photo">照片</p>
-									<div class="photo-w"></div>
+								<div class="item">身份证号码:</div>
+								<div class="input_box w-518">
+									<input style="margin-left:5px;" class="put w-518" type="text">
 								</div>
-								<div class="right-xx" style="width: 470px;">
-									<div class="input_box w-500">
-										<input style="float: left;" class="put w-120" type="text"  maxlength="24" autocomplete="off">
-										<a style="float: left;margin-left: 7px;" class="ui active see btn" href="">浏览...</a>
-										<div class="item ti" style="margin-left: 5px;color: #5d6266;">个人头像,用于建立档案信息</div>
+							</div>
+							
+							<div class="fuild">
+								<div class="item">座机:</div>
+								<div class="input_box w-518">
+									<input style="margin-left:5px;" class="put w-518" type="text">
+								</div>
+							</div>
+							
+							<div class="fuild">
+								<div class="item">手机:</div>
+								<div class="input_box w-518">
+									<input style="margin-left:5px;" class="put w-518" type="text">
+								</div>
+							</div>
+							
+							<div class="fuild">
+								<div class="item">微信:</div>
+								<div class="input_box w-518">
+									<input style="margin-left:5px;" class="put w-518" type="text" placeholder="选填">
+								</div>
+							</div>
+							
+							<div class="fuild">
+								<div class="item">邮箱:</div>
+								<div class="input_box w-518">
+									<input style="margin-left:5px;" class="put w-518" type="text">
+								</div>
+							</div>
+							
+							<div class="fuild">
+								<div class="item">地址:</div>
+								<div class="input_box w-518">
+									<input style="margin-left:5px;" class="put w-518" type="text">
+								</div>
+							</div>
+							
+							<div class="fuild">
+								<div class="item">是否需要车证:</div>
+								<div class="input_box w-60">
+									<select class="dropdown w-60">
+									    <option value="1">是</option>
+									    <option value="2">否</option>
+									</select>
+								</div>
+								<div class="input_box">
+									<input style="margin-left:5px;" class="put" type="text" placeholder="车牌号">
+								</div>
+							</div>
+							
+							<div class="fuild">
+								<div class="item line-17">是否需要协助预约采访:</div>
+								<div class="input_box w-60">
+									<select class="dropdown w-60">
+									    <option value="1">是</option>
+									    <option value="2">否</option>
+									</select>
+								</div>
+								<div class="input_box">
+									<select class="dropdown w-208">
+									    <option value="1">主办单位领导</option>
+									    <option value="2">承办单位领导</option>
+											<option value="2">赛事运营单位</option>
+											<option value="2"> 特邀运动员/跑步达人和大V</option>
+									</select>
+								</div>
+							</div>
+							
+							<div class="fuild">
+								<div class="item cho">计划进行如下哪些报道模式(多选)</div>
+								<div class="input_box w-500">
+									<div class="ui radio">
+										<input type="checkbox">
+										<label>官方指定媒体合作伙伴</label>
+										<input type="checkbox">
+										<label>现场报道</label>
+										<input type="checkbox">
+										<label>深入报道</label>
+										<input type="checkbox">
+										<label>刊登新闻通稿</label>
 									</div>
 								</div>
 							</div>
+							
+							<div class="fuild">
+								<div class="item line-17" style="width: 113px;">是否需要使用入驻酒店的新闻中心:</div>
+								<div class="input_box w-60">
+									<select class="dropdown w-60">
+									    <option value="1">是</option>
+									    <option value="2">否</option>
+									</select>
+								</div>
+								<div class="input_box ml-5">
+									<div class="ui radio">
+										<input type="checkbox" name="wifi">
+										<label>WIFI</label>
+										<input type="checkbox" name="dayin">
+										<label>打印机</label>
+										<input type="checkbox" name="chuan">
+										<label>传真机</label>
+									</div>
+								</div>
+							</div>
+							
+							
+							
+							
 						</div>
+						<div style="text-align:left;">
+						<p>请关注我们</p>
+						<p>官方微博@九龙湖马拉松；<br>
+							官方微信“九龙湖马拉松” （jlhmarathon）
+						</p>
+						<p>若对注册报名有任何疑问，请发邮件至cilla@youandme.so或致电139 1023 2471</p>
+						</div>
+						
+						
 					
 					
-						<div class="ui center aligned mt-20">
-							<a  class="ui next active btn" href="">提交信息</a>
+						<div class="ui center aligned mt-20 pb-30">
+							<a class="ui bg-2 next active btn" href="">注册</a>
+							<p class="next">已有账号？<a href="">立即登录</a></p>
 						</div>
 					</div>
 				</div>
@@ -205,10 +321,10 @@
 					</div>
 
 					<div class="media-sign">
-						<a href=""></a><h3 class="ui header">媒体注册</h3>
+						<a href="./media.html"></a><h3 class="ui header">媒体注册</h3>
 					</div>
 					<div class="zhiyuan-sign">
-						<a href=""></a><h3 class="ui header">志愿者注册</h3>
+						<a href="./wash.html"></a><h3 class="ui header">志愿者注册</h3>
 					</div>
 
 					<div class="mt-20 check">
