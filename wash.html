@@ -24,6 +24,92 @@
 			.ui.header .logo .w-address{
 				background:url(./images/address.jpg) no-repeat center center scroll;
 			}
+			
+			.ui.checkbox {
+				position: relative;
+				display: block;
+				margin: 15px 0;
+				min-width: 1em;
+				height: 1.25em;
+				line-height: 1em;
+				outline: 0;
+				vertical-align: middle;
+			}
+			.ui.checkbox input {
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				outline: 0;
+			}
+			.ui.checkbox label {
+				color: rgba(0,0,0,.6);
+				-webkit-transition: color .2s ease;
+				transition: color .2s ease;
+			}
+			.ui.checkbox label {
+				cursor: pointer;
+				margin-left: 2.5em;
+				outline: 0;
+			}
+			.ui.radio.checkbox label:before {
+				min-width: 1em;
+				height: 1em;
+				border-radius: 500px;
+			}
+			.ui.checkbox label:before {
+				position: absolute;
+				top: 0;
+				line-height: 1;
+				width: 1em;
+				height: 1em;
+				left: 0;
+				content: '';
+				border-radius: 4px;
+				background: #FFF;
+				-webkit-transition: background-color .3s ease,-webkit-box-shadow .3s ease;
+				transition: background-color .3s ease,box-shadow .3s ease;
+				-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+				box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+			}
+			.ui.checkbox input:checked+label:after {
+				-ms-filter: "alpha(Opacity=100)";
+				filter: alpha(opacity=100);
+				opacity: 1;
+			}
+			.ui.radio.checkbox label:after {
+				border: 0;
+				top: .2em;
+				left: .2em;
+				width: .6em;
+				height: .6em;
+				background-color: #555;
+				-webkit-transform: none;
+				-ms-transform: none;
+				transform: none;
+				border-radius: 500px;
+			}
+			.ui.checkbox label:after {
+				top: .275em;
+				left: .2em;
+				width: .45em;
+				height: .15em;
+			}
+			.ui.checkbox label:after {
+				-ms-filter: "alpha(Opacity=0)";
+				filter: alpha(opacity=0);
+				opacity: 0;
+				content: '';
+				position: absolute;
+				background: transparent;
+				border: .2em solid #333;
+				border-top: 0;
+				border-right: 0;
+				-webkit-transform: rotate(-45deg);
+				-ms-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+			}
+			
 			.media-sign{
 				height:55px;
 				background:url(./images/media.jpg);
@@ -35,7 +121,6 @@
 				background:url(./images/zhiyuan.jpg);
 				position:relative;
 			}
-			
 			
 		</style>
 		<link rel="stylesheet" href="./css/base.css" type="text/css" />
@@ -85,14 +170,42 @@
 			<div class="ui responsive white background grid">
 				<div class="w-left">
 					<div class="ui center aligned">
-						<div class="box">
+						<div class="border">
+							<div class="pb">选择参赛项目</div>
+							<div class="choose">
+								<div class="ui radio checkbox">
+									<input type="radio" checked="">
+								  <label>赛事志愿者</label>
+								</div>
+								<div class="ui radio checkbox">
+									<input type="radio">
+									<label>医护志愿者（须有相关专业技能）</label>
+								</div>
+								<div class="ui radio checkbox">
+									<input type="radio">
+									<label>裁判志愿者（须有相关专业技能）</label>
+								</div>
+								<div class="ui radio checkbox">
+									<input type="radio">
+									<label>摄影志愿者</label>
+								</div>
+							</div>
+						
+							<div class="ui center aligned mt-20">
+								<a  class="ui next active btn" href="">下一步</a>
+							</div>
+						</div>
+					
+					
+					
+						<div class="box box-2 box-3">
 							<div class="fuild">
 								<div class="item"> 证件</div>
 								<div class="input_box">
 									<input class="put" type="text"  maxlength="24" autocomplete="off">
 								</div>
 							</div>
-							
+						
 							<div class="fuild">
 								<div class="item">性别</div>
 								<div class="input_box w-150">
@@ -104,7 +217,7 @@
 									</div>
 								</div>
 							</div>
-							
+						
 							<div class="fuild">
 								<div class="item">所在区域</div>
 								<div class="input_box w-500">
@@ -113,23 +226,21 @@
 									<input class="put w-150" type="text"  maxlength="24" autocomplete="off">
 								</div>
 							</div>
-							
+						
 							<div class="fuild">
 								<div class="item"> 姓名</div>
-								<div class="input_box w-150">
-									<input class="put w-150" type="text"  maxlength="24" autocomplete="off">
+								<div class="input_box">
+									<input class="put" type="text"  maxlength="24" autocomplete="off">
 								</div>
-								<div class="item ti">您的姓名,要与证件上的一致</div>
 							</div>
-							
+						
 							<div class="fuild">
 								<div class="item"> 手机号码</div>
-								<div class="input_box w-150">
-									<input class="put w-150" type="text"  maxlength="24" autocomplete="off">
+								<div class="input_box">
+									<input class="put" type="text"  maxlength="24" autocomplete="off">
 								</div>
-								<div class="item ti">输入您的手机号码,方便我们与您取得联系,以免耽误您的赛程</div>
 							</div>
-							
+						
 							<div class="fuild">
 								<div class="item"> 紧急联系人</div>
 								<div class="input_box">
@@ -140,108 +251,72 @@
 									<input class="put" type="text"  maxlength="24" autocomplete="off">
 								</div>
 							</div>
-							
+						
 							<div class="fuild">
 								<div class="item"> 联系电话</div>
 								<div class="input_box">
 									<input class="put" type="text"  maxlength="24" autocomplete="off">
 								</div>
 							</div>
-							
+						
 							<div class="fuild">
 								<div class="item"> Email地址</div>
-								<div class="input_box w-150">
-									<input class="put w-150" type="text"  maxlength="24" autocomplete="off">
+								<div class="input_box">
+									<input class="put" type="text"  maxlength="24" autocomplete="off">
 								</div>
-								<div class="item ti">方便我们与您取得联系,可以邮寄电子资料给您</div>
 							</div>
-							
+						
 							<div class="fuild">
 								<div class="item">传真号码</div>
-								<div class="input_box w-120">
-									<input class="put w-120" type="text"  maxlength="24" autocomplete="off">
-								</div>
-								<div class="item">QQ</div>
-								<div class="input_box w-120">
-									<input class="put w-120" type="text"  maxlength="24" autocomplete="off">
-								</div>
-								<div class="item ti">方便我们与您进行在线沟通</div>
-							</div>
-							
-							<div class="fuild">
-								<div class="item">地址</div>
 								<div class="input_box w-150">
 									<input class="put w-150" type="text"  maxlength="24" autocomplete="off">
 								</div>
-								<div class="item ti">方便我们把比赛相关资料邮寄给您</div>
+								<div class="item">QQ</div>
+								<div class="input_box w-150">
+									<input class="put w-150" type="text"  maxlength="24" autocomplete="off">
+								</div>
 							</div>
-							
+						
+							<div class="fuild">
+								<div class="item">地址</div>
+								<div class="input_box">
+									<input class="put" type="text"  maxlength="24" autocomplete="off">
+								</div>
+							</div>
+						
 							<div class="fuild">
 								<div class="item"> 邮编</div>
 								<div class="input_box">
 									<input class="put" type="text"  maxlength="24" autocomplete="off">
 								</div>
 							</div>
-							
-						</div>
 						
-						<div class="box box-2">
-							<div class="fuild">
-								<div class="left-xx">
-									体检证明
-								</div>
-								<div class="right-xx">
-									<div class="input_box w-500" style="width:520px;">
-										<input class="put w-120" style="float: left;"	type="text"  maxlength="24" autocomplete="off">
-										<a style="float: left;margin-left: 7px;" class="ui active see btn" href="">浏览...</a>
-										<div class="item ti" style="margin-left: 5px;color: #5d6266;">支持各种文档,如果多页照片,建议做到一个文档中上传</div>
-										<p style="display: inline-block;">上传县级以上医院一年内健康证明(检查内容包括心率、心电图、血压、病史)</p>
-									</div>
-								</div>
-							</div>
 						</div>
-						
-						<div class="box box-2">
-							<div class="fuild">
-								<div class="left-xx pt-1">
-									完赛证明
-								</div>
-								<div class="right-xx">
-									<div class="input_box w-500" style="width:520px;">
-										<input class="put w-120" style="float: left;" type="text"  maxlength="24" autocomplete="off">
-										<a style="float: left;margin-left: 7px;" class="ui active see btn" href="">浏览...</a>
-										<div class="item ti" style="margin-left: 5px;color: #5d6266;">支持各种文档,如果多页照片,建议做到一个文档中上传</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
+					
 						<div class="box box-2 box-3">
 							<div class="fuild">
-								<div class="left-xx pt-0" style="width: 170px;">
+								<div class="left-xx pt-0">
 									<p class="photo">照片</p>
 									<div class="photo-w"></div>
 								</div>
-								<div class="right-xx" style="width: 470px;">
+								<div class="right-xx">
 									<div class="input_box w-500">
-										<input style="float: left;" class="put w-120" type="text"  maxlength="24" autocomplete="off">
-										<a style="float: left;margin-left: 7px;" class="ui active see btn" href="">浏览...</a>
-										<div class="item ti" style="margin-left: 5px;color: #5d6266;">个人头像,用于建立档案信息</div>
+										<input class="put w-150" type="text"  maxlength="24" autocomplete="off">
+										<a class="ui active see btn" href="">浏览...</a>
 									</div>
 								</div>
 							</div>
 						</div>
-						
-						
-						<div class="ui center aligned mt-20">
-							<a  class="ui next active btn" href="">提交信息</a>
-						</div>
-						
 					</div>
+					
+					<div class="ui center aligned mt-20">
+						<a  class="ui next active btn" href="">提交信息</a>
+					</div>
+					
+					
+					
 				</div>
-				
-				
-				
+
 				<div class="w-right">
 					<div class="times">
 						<h3 class="ui header">比赛倒计时</h3>
@@ -262,14 +337,14 @@
 							<span>秒</span>
 						</div>
 					</div>
-					
+
 					<div class="media-sign">
 						<a href=""></a><h3 class="ui header">媒体注册</h3>
 					</div>
 					<div class="zhiyuan-sign">
 						<a href=""></a><h3 class="ui header">志愿者注册</h3>
 					</div>
-					
+
 					<div class="mt-20 check">
 						<a href=""class="math">参赛号码查询</a>
 						<a href="" class="ever active">成绩查询</a>
@@ -278,7 +353,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="ft">
 			<div class="ui responsive grid">
 				<div>主办单位：浙江省体育局 宁波市镇海区人民政府</div>
@@ -286,13 +361,12 @@
 				<div>赛事运营：宁波互通有无文化传播有限公司</div>
 			</div>
 		</div>
-		
+
 	</body>
-		
+
 </html>
-		
-		
-		
-		
-		
-		
+					
+					
+					
+					
+					

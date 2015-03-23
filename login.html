@@ -16,7 +16,7 @@
 			    min-width: 320px;
 				margin: 0;
 				font-size: 14px;
-				font-family: "Microsoft YaHei",tahoma,arial,"Hiragino Sans GB",宋体,sans-serif;
+				font-family: tahoma,"Microsoft YaHei",arial,"Hiragino Sans GB",宋体,sans-serif;
 			}
 			.ui.header .logo .w-logo{
 				background:url(./images/logo.jpg) no-repeat center center scroll;
@@ -25,9 +25,25 @@
 				background:url(./images/address.jpg) no-repeat center center scroll;
 			}
 			
+			.media-sign{
+				height:55px;
+				background:url(./images/media.jpg);
+				margin-bottom:5px;
+				position:relative;
+			}
+			.zhiyuan-sign{
+				height:55px;
+				background:url(./images/zhiyuan.jpg);
+				position:relative;
+			}
 			
 		</style>
 		<link rel="stylesheet" href="./css/base.css" type="text/css" />
+		<script type="text/javascript" src="./js/jquery.countdown.js"></script>
+		<script type="text/javascript" src="./js/jquery-2.1.0.js"></script>
+		<script type="text/javascript">
+			$(.times).countdown({since: new Date(2015, 12-1, 25)});
+		</script>
 	</head>
 
 	<body>
@@ -82,9 +98,8 @@
 						
 					
 					<input class="put block" type="text" name="account" placeholder="用户名" id="account">
-					<input class="put block" type="text" name="account" placeholder="密码" id="account">
-					<input type="checkbox" name="terms" checked="checked">
-					<p class="next">下次自动登录 </p><div style="width: 110px;display: inline-block;"></div><a href="">忘记密码</a>
+					<input class="put w-150 block" type="text" name="account" placeholder="短信验证码" id="account"><a href="" class="ui get active btn">获取验证码</a>
+					
 					
 					</div>
 					
