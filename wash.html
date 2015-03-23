@@ -233,10 +233,34 @@
 							
 							<div class="fuild">
 								<div class="item">所在区域</div>
-								<div class="input_box w-500">
-									<input class="put w-150" type="text"  maxlength="24" autocomplete="off">
-									<input class="put w-150" type="text"  maxlength="24" autocomplete="off">
-									<input class="put w-150" type="text"  maxlength="24" autocomplete="off">
+								<div class="input_box w-150">
+									<div class="ui radio">
+										<input type="radio" class="js-area-btn" name="area" value="0" checked="checked">
+										<label>中国</label>
+										<input type="radio" class="js-area-btn" name="area" value="1">
+										<label>海外</label>
+									</div>
+								</div>
+
+							</div>
+
+              <div id="china-box" class="fuild js-hide">
+								<div class="item">地区</div>
+                <select name="province" class="dropdown" >
+                  <option value="0">--请选择--</a>
+                  <option value="1">北京</a>
+                </select>
+
+                <select name="province" class="dropdown" >
+                  <option value="0">--请选择--</a>
+                  <option value="1">密云</a>
+                </select>
+              </div>
+							
+							<div id="country-box" class="fuild js-hide">
+								<div class="item">国家</div>
+								<div class="input_box">
+									<input class="put" type="text" name="country" maxlength="24">
 								</div>
 							</div>
 							
@@ -341,24 +365,8 @@
 				</div>
 			
 				<div class="w-right">
-					<div class="times">
-						<h3 class="ui header">比赛倒计时</h3>
-						<div class="day">
-							31
-							<span>天</span>
-						</div>
-						<div class="day">
-							3
-							<span>小时</span>
-						</div>
-						<div class="day">
-							30
-							<span>分</span>
-						</div>
-						<div class="day">
-							36
-							<span>秒</span>
-						</div>
+					<div class="times" id="count-down">
+
 					</div>
 
 					<div class="media-sign">
@@ -387,6 +395,37 @@
 		</div>
 
 	</body>
+  <script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+  <script type="text/javascript" src="js/base.js"></script>
+  <script type="text/javascript">
+    function showArea(type){
+      if(type==0){
+        $('#china-box').show();
+        $('#country-box').hide();
+      }else if(type==1){
+        $('#china-box').hide();
+        $('#country-box').show();       
+      }
+    }
+
+    $(function(){
+      //假数据
+      var times = lake.match_times();
+      //倒计时
+      lake.count_down(times, 1);
+
+      //来自
+      $(".js-area-btn").on('click', function(){
+        var val = $(this).val();
+        showArea(val);
+      });
+
+      //初始化地区显示框
+      var areaVal = $('.js-area-btn:checked').val();
+      showArea(areaVal);
+
+    });
+  </script>
 
 </html>
 					

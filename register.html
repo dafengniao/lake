@@ -119,24 +119,8 @@
 				</div>
 
 				<div class="w-right">
-					<div class="times">
-						<h3 class="ui header">比赛倒计时</h3>
-						<div class="day">
-							31
-							<span>天</span>
-						</div>
-						<div class="day">
-							3
-							<span>小时</span>
-						</div>
-						<div class="day">
-							30
-							<span>分</span>
-						</div>
-						<div class="day">
-							36
-							<span>秒</span>
-						</div>
+					<div class="times" id="count-down">
+
 					</div>
 
 					<div class="media-sign">
@@ -164,6 +148,15 @@
 		</div>
 
 	</body>
+  <script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+  <script type="text/javascript" src="js/base.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      //假数据
+      var times = lake.match_times();
+      lake.count_down(times, 1);
+    });
+  </script>
 
 </html>
 					
