@@ -452,6 +452,7 @@ h3.ui.header{
 .box .fuild{
 	width:100%;
 	padding: 5px 0;
+	position: relative;
 }
 .box .item {
 	float: left;
@@ -614,6 +615,16 @@ p.next{
 }
 .input_box.w-120,.put.w-120{
 	width:120px;
+}
+.or{
+	position:absolute;
+	bottom: -27px;
+	font-size: 25px;
+	z-index: 9999;
+	width: 40px;
+	text-align: center;
+	background: #fff;
+	left: 300px;
 }
 
 
