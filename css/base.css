@@ -696,7 +696,10 @@ input.ui.btn{
 .join img{
 	margin: 10px;
 }
-
+.messge-2.w-85{
+	height: 135px !important;
+  	font-size: 18px;
+}
 
 
 
