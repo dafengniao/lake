@@ -37,7 +37,6 @@
 			}
 			
 			
-			
 		</style>
 		<link rel="stylesheet" href="./css/base.css" type="text/css" />
 	</head>
@@ -91,8 +90,6 @@
 			<div class="ui responsive white background grid">
 				<div class="w-left">
 					<div class="ui center aligned">
-						
-						
 						<div class="box">
 							<div class="fuild">
 								<div class="item"> 证件</div>
@@ -105,14 +102,14 @@
 								<div class="item">性别</div>
 								<div class="input_box w-150">
 									<div class="ui radio">
-										<input type="radio">
+										<input type="radio" name="sex">
 										<label>男</label>
-										<input type="radio">
+										<input type="radio" name="sex">
 										<label>女</label>
 									</div>
 								</div>
 							</div>
-							
+
 							<div class="fuild">
 								<div class="item">所在区域</div>
 								<div class="input_box w-150">
@@ -222,8 +219,28 @@
 							
 						</div>
 						
-						<div class="box box-2">
+						<div class="box box-2" style="padding-bottom:4.5em;">
 							<div class="fuild">
+								<div class="item">时间</div>
+								<div class="input_box w-80">
+									<select class="dropdown w-80">
+									    <option value="1">2013</option>
+									    <option value="2">2014</option>
+									</select>
+								</div>
+								
+								<div class="item">参赛名称</div>
+								<div class="input_box">
+									<select class="dropdown w-270">
+									    <option value="1">2013</option>
+									    <option value="2">2014</option>
+									</select>
+								</div>
+							</div>
+								
+								
+								
+								
 								<div class="left-xx pt-1">
 									完赛证明
 								</div>
@@ -234,26 +251,9 @@
 										<div class="item ti" style="margin-left: 5px;color: #5d6266;">支持各种文档,如果多页照片,建议做到一个文档中上传</div>
 									</div>
 								</div>
+
 							</div>
 						</div>
-						
-						<div class="box box-2">
-							<div class="fuild">
-								<div class="left-xx">
-									体检证明
-								</div>
-								<div class="right-xx">
-									<div class="input_box w-500" style="width:520px;">
-										<input class="put w-120" style="float: left;"	type="text"  maxlength="24" autocomplete="off">
-										<a style="float: left;margin-left: 7px;" class="ui active see btn" href="">浏览...</a>
-										<div class="item ti" style="margin-left: 5px;color: #5d6266;">支持各种文档,如果多页照片,建议做到一个文档中上传</div>
-										<p style="display: inline-block;">上传县级以上医院一年内健康证明(检查内容包括心率、心电图、血压、病史)</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						
 						
 						<div class="box box-2 box-3">
 							<div class="fuild">
@@ -270,158 +270,6 @@
 								</div>
 							</div>
 						</div>
-						
-						
-						<div class="ui mt-20 pb-30" style="margin-left: 30px;text-align: left;">
-							<input type="submit" class="ui bg-2 next active btn" value="添加选手">
-						</div>
-						
-						<!-- 添加 -->
-				<!--		<div class="box">
-							<div class="fuild">
-								<div class="item"> 证件</div>
-								<div class="input_box">
-									<input class="put" type="text"  maxlength="24" autocomplete="off">
-								</div>
-							</div>
-							
-							<div class="fuild">
-								<div class="item">性别</div>
-								<div class="input_box w-150">
-									<div class="ui radio">
-										<input type="radio">
-										<label>男</label>
-										<input type="radio">
-										<label>女</label>
-									</div>
-								</div>
-								<div class="item">出生日期</div>
-								<div class="input_box">
-									<input class="put" type="text"  maxlength="24" autocomplete="off">
-								</div>
-							</div>
-							
-							<div class="fuild">
-								<div class="item">所在区域</div>
-								<div class="input_box w-500">
-									<input class="put w-150" type="text"  maxlength="24" autocomplete="off">
-									<input class="put w-150" type="text"  maxlength="24" autocomplete="off">
-									<input class="put w-150" type="text"  maxlength="24" autocomplete="off">
-								</div>
-							</div>
-							
-							<div class="fuild">
-								<div class="item"> 姓名</div>
-								<div class="input_box">
-									<input class="put" type="text"  maxlength="24" autocomplete="off">
-								</div>
-							</div>
-							
-							<div class="fuild">
-								<div class="item"> 手机号码</div>
-								<div class="input_box">
-									<input class="put" type="text"  maxlength="24" autocomplete="off">
-								</div>
-							</div>
-							
-							<div class="fuild">
-								<div class="item"> 紧急联系人</div>
-								<div class="input_box">
-									<input class="put" type="text"  maxlength="24" autocomplete="off">
-								</div>
-								<div class="item"> 紧急联系电话</div>
-								<div class="input_box">
-									<input class="put" type="text"  maxlength="24" autocomplete="off">
-								</div>
-							</div>
-							
-							<div class="fuild">
-								<div class="item"> 联系电话</div>
-								<div class="input_box">
-									<input class="put" type="text"  maxlength="24" autocomplete="off">
-								</div>
-							</div>
-							
-							<div class="fuild">
-								<div class="item"> Email地址</div>
-								<div class="input_box">
-									<input class="put" type="text"  maxlength="24" autocomplete="off">
-								</div>
-							</div>
-							
-							<div class="fuild">
-								<div class="item">传真号码</div>
-								<div class="input_box w-150">
-									<input class="put w-150" type="text"  maxlength="24" autocomplete="off">
-								</div>
-								<div class="item">QQ</div>
-								<div class="input_box w-150">
-									<input class="put w-150" type="text"  maxlength="24" autocomplete="off">
-								</div>
-							</div>
-							
-							<div class="fuild">
-								<div class="item">地址</div>
-								<div class="input_box">
-									<input class="put" type="text"  maxlength="24" autocomplete="off">
-								</div>
-							</div>
-							
-							<div class="fuild">
-								<div class="item"> 邮箱</div>
-								<div class="input_box">
-									<input class="put" type="text"  maxlength="24" autocomplete="off">
-								</div>
-							</div>
-							
-						</div>
-						
-						<div class="box box-2">
-							<div class="fuild">
-								<div class="left-xx">
-									体检证明
-								</div>
-								<div class="right-xx">
-									<div class="input_box w-500">
-										<input class="put w-150" type="text"  maxlength="24" autocomplete="off">
-										<a class="ui active see btn" href="">浏览...</a>
-										<p>上传县级以上医院一年内健康证明(检查内容包括心率、心电图、血压、病史)</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="box box-2">
-							<div class="fuild">
-								<div class="left-xx pt-1">
-									完赛证明
-								</div>
-								<div class="right-xx">
-									<div class="input_box w-500">
-										<input class="put w-150" type="text"  maxlength="24" autocomplete="off">
-										<a class="ui active see btn" href="">浏览...</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="box box-2 box-3">
-							<div class="fuild">
-								<div class="left-xx pt-0">
-									<p class="photo">照片</p>
-									<div class="photo-w"></div>
-								</div>
-								<div class="right-xx">
-									<div class="input_box w-500">
-										<input class="put w-150" type="text"  maxlength="24" autocomplete="off">
-										<a class="ui active see btn" href="">浏览...</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						
-					-->
 						
 						
 						<div class="ui center aligned mt-20">
@@ -496,4 +344,9 @@
   </script>
 		
 </html>
-
+		
+		
+		
+		
+		
+		
