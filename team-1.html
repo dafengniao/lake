@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0">
+		<meta name="title" content="国际半程马拉松赛" />
+		<meta name="keywords" content="国际半程马拉松赛"/>
+		<meta name="description" content="国际半程马拉松赛" />
+		<meta content="国际半程马拉松赛" name="author" />
+		<title>国际半程马拉松赛</title>
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<style type="text/css">
+			body {
+			    color: #5d6266;
+			    min-width: 320px;
+				margin: 0;
+				font-size: 14px;
+				font-family: tahoma,"Microsoft YaHei",arial,"Hiragino Sans GB",宋体,sans-serif;
+			}
+			.ui.header .logo .w-logo{
+				background:url(./images/logo.jpg) no-repeat center center scroll;
+			}
+			.ui.header .logo .w-address{
+				background:url(./images/address.jpg) no-repeat center center scroll;
+			}
+			.media-sign{
+				height:55px;
+				background:url(./images/media.jpg);
+				margin-bottom:5px;
+				position:relative;
+			}
+			.zhiyuan-sign{
+				height:55px;
+				background:url(./images/zhiyuan.jpg);
+				position:relative;
+			}
+			
+			
+		</style>
+		<link rel="stylesheet" href="./css/base.css" type="text/css" />
+	</head>
+
+	<body>
+		<header class="ui header">
+			<div class="ui top">
+				<div class="ui responsive grid">
+					<div class="china">中文/EN</div>
+					<div class="float right">
+						<a class="ui btn login" href="./login.html">登录</a>
+						<a class="ui btn green active sign" href="./register.html">注册</a>
+					</div>
+				</div>
+			</div>
+			<div class="logo">
+				<div class="ui responsive grid">
+					<div class="w-logo"></div>
+					<div class="w-address"></div>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="ui responsive grid">
+					<ul class="nav">
+						<li><a href="./home.html"></a>首页</li>
+						<li class="hov"><a href=""></a>赛事信息
+							<div class="sect-menu">
+								<div><a href="./rule.html"></a>参赛规则</div>
+								<div><a href="./org.html"></a>主办单位</div>
+							</div>
+						</li>
+						
+						<li><a href="./news.html"></a>新闻中心</li>
+						<li class="hov">合作伙伴
+							<div class="sect-menu">
+								<div><a href="./gaf.html"></a>官方合作</div>
+								<div><a href="./mti.html"></a>媒体合作</div>
+								<div><a href="./goy.html"></a>公益合作</div>
+							</div>
+						</li>
+						<li><a href="./wash.html"></a>志愿者</li>
+						<li><a href="./active.html"></a>配套活动</li>
+						<li><a href="./about.html"></a>关于我们</li>
+						<li><a href="./join.html"></a>参赛服务</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		
+		<div class="match1 match3">
+			<div class="ui responsive white background grid">
+				
+				
+				
+				
+				<div class="w-left">
+					
+					<div class="messge-2 w-85">
+						
+						<p>高校团体免交报名费，但高校团体不得参报迷你马拉松项目。前十所报名的高等院校，本次比赛组委会提供不超过6人(领队、教练各1人，运动员4人)指定宾馆一天的住宿(双人标间)。各高校团体在报名时需缴纳1000元人民币保证金，参赛并完赛率达90%(含)以上的团体，组委会将予以退还保证金，否则不予退还。</p>
+					</div>
+					
+					<div class="ui center aligned mt-20" style="font-size:20px;">
+							<p>请联系组委会:uni@jlhmarathon.com</p>
+					</div>
+						
+						
+				</div>
+				
+				
+				
+				<div class="w-right">
+					<div class="times" id="count-down">
+
+					</div>
+					
+					<div class="media-sign">
+						<a href="./media.html"></a><h3 class="ui header">媒体注册</h3>
+					</div>
+					<div class="zhiyuan-sign">
+						<a href="./wash.html"></a><h3 class="ui header">志愿者注册</h3>
+					</div>
+					
+					<div class="mt-20 check">
+						<a href=""class="math">参赛号码查询</a>
+						<a href="" class="ever active">成绩查询</a>
+						<a href="" class="ever">成绩证书下载</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="ft">
+			<div class="ui responsive grid">
+				<div>主办单位：浙江省体育局 宁波市镇海区人民政府</div>
+				<div>承办单位：宁波镇海区体育局、宁波镇海区风景旅游局、宁波镇海区经济合作局、宁波镇海区九龙湖旅游度假区管委会</div>
+				<div>赛事运营：宁波互通有无文化传播有限公司</div>
+			</div>
+		</div>
+		
+	</body>
+  <script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+  <script type="text/javascript" src="js/base.js"></script>
+  <script type="text/javascript">
+    function showArea(type){
+      if(type==0){
+        $('#china-box').show();
+        $('#country-box').hide();
+      }else if(type==1){
+        $('#china-box').hide();
+        $('#country-box').show();       
+      }
+    }
+
+    $(function(){
+      //假数据
+      var times = lake.match_times();
+      //倒计时
+      lake.count_down(times, 1);
+
+      //来自
+      $(".js-area-btn").on('click', function(){
+        var val = $(this).val();
+        showArea(val);
+      });
+
+      //初始化地区显示框
+      var areaVal = $('.js-area-btn:checked').val();
+      showArea(areaVal);
+
+    });
+  </script>
+		
+</html>
+		
+		
+		
+		
+		
+		
+
