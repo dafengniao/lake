@@ -18,9 +18,11 @@
 .media-sign h3.ui.header,.zhiyuan-sign h3.ui.header{
 	padding-left:10px;
 	color:#fff;
-	line-height: 55px;
+	line-height: 17px;
+	padding-top: 11px;
 	margin:0;
 	text-align:left !important;
+	font-weight: 400;
 }
 @media screen and (max-width: 1050px){
 	.ui.responsive.grid{
@@ -67,24 +69,24 @@
 	background:#f4f4f4;
 	height:40px;
 }
-.ui.header .ui.top .china,.ui.header .ui.top .float.right{
+.ui.header .china,.ui.header .float.right{
 	margin:0;
 	line-height:40px;
 	display:inline-block;
 }
-.ui.header .ui.top .ui.sign.btn{
+.ui.header .ui.sign.btn{
 	color:#fff;
 	margin-left: 10px;
 }
-.ui.header .ui.top a.ui.active.btn,.ui.header .ui.top a.active.ui.btn:hover{
+.ui.header a.ui.active.btn,.ui.header a.active.ui.btn:hover{
 	text-decoration: none;
 	border-radius:4px;
 }
-.ui.header .ui.top a.login{
+.ui.header a.login{
 	color: #5d6266;
 	text-decoration: none;
 }
-.ui.header .ui.top a.login:hover{
+.ui.header a.login:hover{
 	text-decoration: underline;
 }
 .ui.header .logo{
@@ -95,14 +97,15 @@
 	position:relative;
 }
 .ui.header .logo .w-logo{
-	width:400px;
-	height:120px;
+	width:430px;
+	height:140px;
 	background-size:cover;
 	display:inline-block;
+	float: left;
 }
 .ui.header .logo .w-address{
-	width:150px;
-	height:120px;
+	width:235px;
+	height:140px;
 	background-size:cover;
 	position:absolute;
 	right:0;
@@ -118,11 +121,11 @@
 }
 .ui.header .menu ul.nav > li{
 	display: inline;
-	line-height: 50px;
+	line-height: 18px;
 	position: relative;
 	z-index: 99999;
 	float: left;
-	padding: 0px 30px;
+	padding: 7px 30px;
 	font-size: 16px;
 }
 .ui.header .menu ul.nav{
@@ -130,7 +133,7 @@
 	margin:0;
 	list-style: none;
 	position: relative;
-	padding-left: 20px;
+	margin-left: -25px;
 }
 .ui.header .menu ul.nav li:hover,.ui.header .menu ul.nav li.active{
 	background:#0087c5;
@@ -169,11 +172,11 @@
   * ft
 **/
 .ft{
-	background:#d1d1d1;
+	background:#0c74c4;
+	color:#fff;
 	height:130px;
 	font-size:14px;
 	line-height:28px;
-	color:#222;
 	padding:20px 0 0 20px;
 }
 
@@ -200,16 +203,9 @@ h3.ui.header{
 	display:inline-block;
 	float:right;
 }
-.w-left .content{
-	padding: 18px 0;
-	border-bottom: 2px solid rgba(0,0,0,0.2);
-	height: 140px;
-}
 .w-left .image{
 	display:inline-block;
 	float:left;
-	width:200px;
-	height:140px;
 	position:relative;
 }
 .w-left .image a{
@@ -222,8 +218,6 @@ h3.ui.header{
 .w-left .text{
 	display:inline-block;
 	float:right;
-	width:425px;
-	height:140px;
 }
 .w-left .text h3{
 	margin-top:0;
@@ -244,8 +238,10 @@ h3.ui.header{
 	margin-bottom:20px;
 }
 .w-right .times h3.ui.header{
-	padding-top:5px;
-	margin-bottom: 5px;
+	padding-top: 14px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	line-height: 20px;
 }
 .w-right .times h3.ui.header + .day{
 	margin-left:12.5px;
@@ -268,20 +264,25 @@ h3.ui.header{
 }
 .w-right .check{
 	background:#f4f4f4;
-	height:150px;
+	height:180px;
 	text-align:center;
 }
 .w-right .check .math{
 	display:block;
-	font-size:20px;
+	font-size:18px;
 	color:#000;
 	padding-top:10px;
+	line-height:20px;
 }
 .w-right .check .ever{
 	display:block;
 	color:#0087c5;
-	font-size:18px;
+	font-size:16px;
 	padding-bottom: 5px;
+	line-height: 20px;
+}
+.position h3.ui.header{
+	line-height: 20px;
 }
 .w-right .check .ever + input{
 	width:240px;
@@ -335,8 +336,10 @@ h3.ui.header{
 .match1  .media-sign h3.ui.header,.zhiyuan-sign h3.ui.header{
 	text-align:center;
 	color:#fff;
-	line-height: 55px;
+	line-height: 17px;
+  	padding-top: 12px;
 	margin:0;
+	font-weight: 400;
 }
 .media-sign:hover h3.ui.header,.zhiyuan-sign:hover h3.ui.header{
 	text-decoration: underline;
@@ -701,9 +704,187 @@ input.ui.btn{
   	font-size: 18px;
 }
 
+.ui.banner.grid{
+	width:1000px;
+	margin:0 auto 20px;
+}
+.w-320{
+	width:320px;
+	margin-top: 15px;
+	display: inline-block;
+  	float: left;
+}
+.w-320 .content{
+	height:110px;
+}
+.w-320 .content .image{
+	width:120px;
+}
+.w-320 .content .text{
+	width:190px;
+}
+.w-320 .content .text h3{
+	font-size:14px;
+	margin-bottom: 0px;
+	padding-bottom: 0;
+}
+.w-320 .content .text h3 +p{
+    margin-top: 0px;
+  	font-size: 12px;
+  	line-height: 17px;
+  	margin-bottom: 0;
+}
+.w-150{
+	width:150px;
+	margin-top:15px;
+	margin-left:10px;
+	display: inline-block;
+  	float: left;
+}
+.w-150 .text-1 h3{
+	font-size:14px;
+	margin-bottom: 0px;
+	padding-bottom: 0;
+	margin-top:3px;
+}
+.w-150 .text-1 h3 + p{
+	margin-top: 3px;
+  	font-size: 12px;
+  	line-height: 17px;
+  	margin-bottom: 0;
+}
 
+.w-150 .img{
+	width:40px;
+	display:inline-block;
+	float:left;
+}
+.w-150 .text-2{
+	width:105px;
+	margin-left:5px;
+	color:#00a2e3;
+	display:inline-block;
+	float:left;
+}
+.w-150 .text-2 h3,.w-150 .text-2 p{
+	margin:0;
+	padding:0;
+}
+.w-150 .text-2 h3{
+	font-size:13px;
+}
+.w-150 .text-2 p{
+	font-size:12px;
+}
+.w-150 .cont-1 {
+  	padding: 10px 0;
+	border-bottom: 1px solid #00a2e3;
+	height: 37px;
+	position:relative;
+}
+.text-2 a{
+	text-decoration: none;
+	color:#00a2e3;
+}
+.text-2 a:hover{
+	text-decoration:underline;
+}
 
+.ui.logo.grid{
+	width: 1000px;
+  	background: #fff;
+	text-align: center;
+  	margin: 20px auto;
+  	padding: 20px 0;
+}
+.ui.logo.grid p{
+	font-size:18px;
+	margin: 0 0 10px;
+}
+.ui.logo.grid hr{
+	width:50px;
+	height: 1px;
+	background: #000;
+	margin: 20px auto;
+}
 
+.w-lin{
+	display:inline-block;
+	float:left;
+	vertical-align: middle;
+	text-align: right;
+	padding: 30px 0 10px;
+	margin-left: 20px;
+}
+.ui.blue{
+	background:#0087c5;
+}
+.w-lin .ui.btn.login{
+	width: 64px;
+    display: inline-block;
+    text-align: center;
+	font-size: 16px;
+}
+.w-lin .ui.sign{
+	display: inline-block;
+  	text-align: center;
+  	font-size: 16px;
+  	padding: 4px 8px;
+}
+
+.fotter .wide.column{
+	width:13%;
+	display:inline-block;
+	float:left;
+}
+.ui.list h2.item {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: .5em;
+  font-size: 1.015rem;
+}
+.ui.list {
+  list-style-type: none;
+  margin: 1em 0;
+  padding: 0;
+}
+.ui.list b{
+	width:100%;
+	float: left;
+	display: block;
+}
+.ui.list hr{
+	width:15px;
+	float: left;
+	border: 1px solid #fff;
+}
+.ui.list .item {
+  display: block;
+  font-size: 1.015rem;
+  padding: 0.1em 0;
+}
+.ui.list .item:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.ui.list a.ui.link.item {
+  width: 65px;
+  font-size: 0.9rem!important;
+}
+.ui.list a:hover{
+  text-decoration:underline;
+}
+.ui.link {
+  color: #fff;
+  text-decoration: none;
+}
+.ui.list a.ui.link.item {
+  width: 80px;
+  font-size: .96rem!important;
+}
 
 
 

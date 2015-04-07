@@ -36,7 +36,7 @@ lake.count_down = function(times, type){
       //输入时间
       var time_show = '';
       if(type==1){
-        time_show += '<h3 class="ui header">比赛倒计时</h3>';
+        time_show += '<h3 class="ui header">比赛倒计时<br><small>Countdown</small></h3>';
         time_show += '<div class="day">'+ day +'<span>天</span></div>';
 	      time_show += '<div class="day">'+ hour +'<span>小时</span></div>';				
 	      time_show += '<div class="day">'+ minite +'<span>分</span></div>';
