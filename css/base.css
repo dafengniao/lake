@@ -766,7 +766,7 @@ input.ui.btn{
 	margin-top:3px;
 }
 .w-150 .text-1 h3 + p{
-	margin-top: 3px;
+	margin-top: 0px;
   	font-size: 12px;
   	line-height: 17px;
   	margin-bottom: 0;
@@ -928,5 +928,46 @@ input.ui.btn{
 .mt-15{
 	margin-top:15px;
 }
-
+.text-1 {
+  color: #00a2e3;
+}
+.text-1 +p{
+  	background: #00a2e3;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	margin: 6px 0;
+	width: 145px;
+}
+.w-left p.lei{
+	margin:0;
+	font-size:14px;
+	color:#999999;
+}
+.w-left p.lei span{
+	color:#00a2e3;
+}
+.w-left h3.ui.tit{
+	font-size:24px;
+	color:#222;
+	padding:10px 0;
+	margin:0;
+}
+.w-left h3.ui.tit+hr{
+	border: 1px solid rgba(0,0,0,0.1);
+}
+p.enl{
+	text-align:center;
+	margin-top: 40px;
+}
+.center.click{
+	text-align:center;
+	text-decoration: none;
+	font-size:24px;
+	color:#006390;
+	line-height: 18px;
+}
+.center.click small{
+	font-size:16px;
+}
 
