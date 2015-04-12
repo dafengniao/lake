@@ -970,4 +970,15 @@ p.enl{
 .center.click small{
 	font-size:16px;
 }
+.mt-0{
+	margin-top:0 !important;
+}
+.home{
+	background:#f4f4f4;
+	padding:20px 0;
+	margin-top: -3px;
+}
+.home>.ui.white.grid{
+	padding: 20px;
+}
 

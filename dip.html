@@ -9,73 +9,111 @@
 		<meta name="description" content="九龙湖（宁波）国际半程马拉松赛" />
 		<meta content="九龙湖（宁波）国际半程马拉松赛" name="author" />
 		<title>九龙湖（宁波）国际半程马拉松赛</title>
-		<link rel="shortcut icon" href="favicon.ico" />
+		<link href="./favicon.ico" rel="shortcut icon">
+
+        <link rel="stylesheet" href="http://static.jlhmls.com/css/base.css" type="text/css" />
+        <link rel="stylesheet" href="http://static.jlhmls.com/css/style.css" type="text/css" />
+				<link rel="stylesheet" href="./css/base.css" type="text/css" />
 		<style type="text/css">
-			body {
-			    color: #5d6266;
-			    min-width: 320px;
-				margin: 0;
-				font-size: 14px;
-				font-family: tahoma,"Microsoft YaHei",arial,"Hiragino Sans GB",宋体,sans-serif;
-			}
-			.ui.header .logo .w-logo{
-				background:url(./images/yema-logo.jpg) no-repeat center center scroll;
-			}
-			.ui.header .logo .w-address{
-				background:url(./images/address1.jpg) no-repeat center center scroll;
-			}
-			
-			.home{
-				background:#f4f4f4;
-				padding:20px 0;
-				margin-top: -3px;
-			}
-			.home>.ui.white.grid{
-				padding: 20px;
-			}
-			
-			.media-sign{
-				height:55px;
-				background:url(./images/media.jpg);
-				margin-bottom:5px;
-				position:relative;
-			}
-			.zhiyuan-sign{
-				height:55px;
-				background:url(./images/zhiyuan.jpg);
-				position:relative;
-			}
-			.media-sign a,.zhiyuan-sign a{
-				position:absolute;
-				height:100%;
-				width:100%;
-				top:0;
-				left:0;
-			}/*
-			.media-sign h3.ui.header,.zhiyuan-sign h3.ui.header{
-				padding-left:10px;
-				color:#fff;
-				line-height: 55px;
-				margin:0;
-				text-align:left !important;
-			}
-			.media-sign:hover h3.ui.header,.zhiyuan-sign:hover h3.ui.header{
-				text-decoration: underline;
-			}*/
-			
-			.w-right .times{
-				background: url(./images/time-bg.jpg) center center /cover;
-			}
-			.fotter{
-				background:url(./images/botto.jpg) no-repeat center center /cover;
-				color:#fff;
-				padding: 20px 0 20px 20px;
-			}
-			
-			
-			
+					body {
+					    color: #5d6266;
+					    min-width: 320px;
+						margin: 0;
+						font-size: 14px;
+						font-family: tahoma,"Microsoft YaHei",arial,"Hiragino Sans GB",宋体,sans-serif;
+					}
+          .ui.header .logo .w-logo{
+						background:url(./images/yema-logo.jpg) no-repeat center center scroll;
+					}
+					.ui.header .logo .w-address{
+						background:url(./images/address1.jpg) no-repeat center center scroll;
+					}
+					.media-sign{
+						height:55px;
+						background:url(./images/media.jpg);
+						margin-bottom:5px;
+						position:relative;
+					}
+					.zhiyuan-sign{
+						height:55px;
+						background:url(./images/zhiyuan.jpg);
+						position:relative;
+					}
+					.media-sign a,.zhiyuan-sign a{
+						position:absolute;
+						height:100%;
+						width:100%;
+						top:0;
+						left:0;
+					}
+					.w-right .times{
+						background: url(./images/time-bg.jpg) center center /cover;
+					}
+					.fotter{
+						background:url(./images/botto.jpg) no-repeat center center /cover;
+						color:#fff;
+						padding: 20px 0 20px 20px;
+					}  
+					
+					.dip{
+						position:relative;
+					}
+					.dip-1{
+						position:absolute;
+						top:0;
+						left:0;
+						width:100%;
+						text-align:center;
+					}
+					.diplay{
+						display:inline-block;
+						float:left;
+					}
+					.diplay.left{
+						text-align:right;
+						padding-right:2%;
+						color:#80cef4;
+						font-size:20px;
+						width:38%;
+						line-height:20px;
+					}
+					.diplay.left span{
+						font-size:15px;
+					}
+					.diplay.right{
+						text-align:left;
+						margin-left:2%;
+						font-size:27px;
+						color:#216cb5;
+						width:58%;
+						line-height: 42px;
+					}
+					p.diplay{
+						margin:0;
+					}
+					.paly-het{
+						height:76px;
+					}
+
+
+					.dip a.ui.down.active.btn, .dip a.down.active.ui.btn:hover {
+					  text-decoration: none;
+					  border-radius: 4px;
+					}
+					.dip a.ui.down.btn {
+					  font-size: 24px;
+					  line-height: 24px;
+						color: #fff;
+						display: inline-block;
+					  text-align: center;
+					  padding: 8px 7px 4px;
+						background: #0087c5 !important;
+					}
+					.dip a.ui.down.btn small{
+						font-size:16px;
+					}
 		</style>
-		<link rel="stylesheet" href="./css/base.css" type="text/css" />
+
 	</head>
 
 	<body>
@@ -166,61 +204,93 @@
 		</header>
 		
 		
-		<div class="home mt-0">
-			<div class="ui responsive white background grid">
-			  <div class="w-left">
-					<p class="lei">首页 > 参赛服务 > <span>住宿交通</span></p>
-					<h3 class="ui tit">住宿交通</h3>
-					<hr>
-					<img class="mt-15" src="./images/live.jpg" width="100%">
+
+    <div class="home mt-0">
+        <div class="ui responsive white background grid">
+            <div class="w-left">
+								
+								<p class="lei">首页 > 参赛服务 > <span>成绩查询</span></p>
+								<h3 class="ui tit">2015九龙湖（宁波）国际半程马拉松赛成绩查询</h3>
+								<hr>
+								<div class="dip mt-15">
+                	<img src="./images/dip.jpg" width="100%">
+									<div class="dip-1">
+										<img class="" src="./images/dip1.png" width="100%">
+										<div class="paly-het">
+											<p class="diplay left">姓名<br><span>NAME</span></p>
+											<p class="diplay right">杰克·吉伦希尔</p>
+										</div>
+										<div class="paly-het">
+											<p class="diplay left">参赛号码<br><span>BIB No.</span></p>
+											<p class="diplay right">A14637</p>
+										</div>
+										<div class="paly-het">
+											<p class="diplay left">枪声成绩<br><span>GUN TIME</span></p>
+											<p class="diplay right">1:32:58</p>
+										</div>
+										<div class="paly-het">
+											<p class="diplay left">净计时成绩<br><span>NET TIME</span></p>
+											<p class="diplay right">1:32:35</p>
+										</div>
+										
+									</div>
+									
+									<div class="center aligned mt-20">
+										<a class="ui btn blue active down" href="./register.html">点击下载证书 <br><small>Download</small></a>
+									</div>
+									
+								</div>
+								
+								
+                
+            </div>
+
+            <div class="w-right">
+							<a href="./match1.html"><img src="./images/sign-up.jpg" width="100%"></a>
+
+							<div class="mt-10 times" id="count-down">
+								<h3 class="ui header">比赛倒计时<br><small>Countdown</small></h3>
+								<div class="day">
+									0
+									<span>天</span>
+								</div>
+								<div class="day">
+									0
+									<span>小时</span>
+								</div>
+								<div class="day">
+									0
+									<span>分</span>
+								</div>
+								<div class="day">
+									0
+									<span>秒</span>
+								</div>
+							</div>
+
+							<div class="media-sign">
+								<a href="./media.html"></a><h3 class="ui header">媒体注册<br><small>Media Registration</small></h3>
+							</div>
+							<div class="zhiyuan-sign">
+								<a href="./wash.html"></a><h3 class="ui header">志愿者注册<br><small>Volunteer Registration</small></h3>
+							</div>
+
+							<div class="mt-15 check">
+								<div class="math">参赛号码查询<br><small>Check Your Number</small></div>
+								<div class="ever">身份证号<br><small>ID</small></div>
+								<input></input>
+								<div class="ui cha active btn"><a href=""></a><small>查询</small></div>
+							</div>
+
+							<div class="mt-15 position">
+								<h3 class="ui header">比赛路线<br><small>Marathon Route</small></h3>
+								<a href="./way.html"><img src="./images/map.png" width="100%"></a>
+							</div>
+						</div>
+						
 				</div>
-				<div class="w-right">
-					<a href="./match1.html"><img src="./images/sign-up.jpg" width="100%"></a>
-					
-					<div class="mt-10 times" id="count-down">
-						<h3 class="ui header">比赛倒计时<br><small>Countdown</small></h3>
-						<div class="day">
-							0
-							<span>天</span>
-						</div>
-						<div class="day">
-							0
-							<span>小时</span>
-						</div>
-						<div class="day">
-							0
-							<span>分</span>
-						</div>
-						<div class="day">
-							0
-							<span>秒</span>
-						</div>
-					</div>
-					
-					<div class="media-sign">
-						<a href="./media.html"></a><h3 class="ui header">媒体注册<br><small>Media Registration</small></h3>
-					</div>
-					<div class="zhiyuan-sign">
-						<a href="./wash.html"></a><h3 class="ui header">志愿者注册<br><small>Volunteer Registration</small></h3>
-					</div>
-					
-					<div class="mt-15 check">
-						<div class="math">参赛号码查询<br><small>Check Your Number</small></div>
-						<div class="ever">身份证号<br><small>ID</small></div>
-						<input></input>
-						<div class="ui cha active btn"><a href=""></a><small>查询</small></div>
-					</div>
-					
-					<div class="mt-15 position">
-						<h3 class="ui header">比赛路线<br><small>Marathon Route</small></h3>
-						<a href="./way.html"><img src="./images/map.png" width="100%"></a>
-					</div>
-				</div>
-			</div>
 		</div>
-		
-		
-			
+
 		<div class="ft">
 			<div class="ui responsive grid">
 				<div>主办单位：浙江省体育局 、宁波市镇海区人民政府</div>
@@ -241,7 +311,7 @@
 						<a class="ui link item" href="">赛事公告</a>
 					</div>
 				</div>
-				
+
 				<div class="wide column">
 					<div class="ui list">
 						<h2 class="item">
@@ -253,7 +323,7 @@
 						<a class="ui link item" href=""> 资料下载</a>
 					</div>
 				</div>
-				
+
 				<div class="wide column">
 					<div class="ui list">
 						<h2 class="item">
@@ -266,7 +336,7 @@
 						<a class="ui link item" href=""> 公益合作</a>
 					</div>
 				</div>
-				
+
 				<div class="wide column">
 					<div class="ui list">
 						<h2 class="item">
@@ -278,7 +348,7 @@
 						<a class="ui link item" href=""> 志愿者新闻</a>
 					</div>
 				</div>
-				
+
 				<div class="wide column">
 					<div class="ui list">
 						<h2 class="item">
@@ -291,7 +361,7 @@
 						<a class="ui link item" href=""> 摄影大赛</a>
 					</div>
 				</div>
-				
+
 				<div class="wide column">
 					<div class="ui list">
 						<h2 class="item">
@@ -304,7 +374,7 @@
 						<a class="ui link item" href=""> 联系我们</a>
 					</div>
 				</div>
-				
+
 				<div class="wide column">
 					<div class="ui list">
 						<h2 class="item">
@@ -319,19 +389,27 @@
 						<a class="ui link item" href=""> 终点规划</a>
 					</div>
 				</div>
-				
-				
+
+
 			</div>
 		</div>
 		
-	</body>
-  <script type="text/javascript" src="js/jquery-2.1.0.js"></script>
-  <script type="text/javascript" src="js/base.js"></script>
+		
+  </body>
+  <script type="text/javascript" src="http://static.jlhmls.com/js/jquery-2.1.0.js"></script>
+  <script type="text/javascript" src="http://static.jlhmls.com/js/jquery.form.js"></script>
+  <script type="text/javascript" src="http://static.jlhmls.com/js/jquery.validate.min.js"></script>
+
+  <script type="text/javascript" src="http://static.jlhmls.com/js/base.js"></script>
+  <script type="text/javascript" src="http://static.jlhmls.com/js/app.js?v1416"></script>
+
+  
+  
   <script type="text/javascript">
     $(function(){
-      //假数据
-      var times = lake.match_times();
-      lake.count_down(times, 1);
+      
+    jlh.do_count_down();
+
     });
   </script>
 		
