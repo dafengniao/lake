@@ -923,7 +923,7 @@ input.ui.btn{
 	font-size:12px;
 }
 .mt-10{
-	margin-top:10px;
+	margin-top:10px !important;
 }
 .mt-15{
 	margin-top:15px;
