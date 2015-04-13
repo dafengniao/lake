@@ -981,4 +981,29 @@ p.enl{
 .home>.ui.white.grid{
 	padding: 20px;
 }
+.content.new-c{
+	height:150px;
+}
+.content.new-c .image{
+	width:200px;
+	height:135px;
+}
+.content.new-c .image img{
+	height: 135px;
+	width: 100%;
+}
+.content.new-c .text{
+	width:425px;
+}
+.content.new-c .text h3{
+	font-size:16px;
+	margin-bottom:0;
+}
+.content.new-c .text p{
+	font-size:14px;
+	margin-top: 5px;
+}
+.home .tht{
+	padding:0;
+}
 
