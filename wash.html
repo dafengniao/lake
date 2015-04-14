@@ -4,12 +4,12 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 		<meta name="viewport" content="width=device-width, maximum-scale=1.0">
-		<meta name="title" content="国际半程马拉松赛" />
-		<meta name="keywords" content="国际半程马拉松赛"/>
-		<meta name="description" content="国际半程马拉松赛" />
-		<meta content="国际半程马拉松赛" name="author" />
-		<title>国际半程马拉松赛</title>
-		<link rel="shortcut icon" href="/favicon.ico" />
+		<meta name="title" content="九龙湖（宁波）国际半程马拉松赛" />
+		<meta name="keywords" content="九龙湖（宁波）国际半程马拉松赛"/>
+		<meta name="description" content="九龙湖（宁波）国际半程马拉松赛" />
+		<meta content="九龙湖（宁波）国际半程马拉松赛" name="author" />
+		<title>九龙湖（宁波）国际半程马拉松赛</title>
+		<link rel="shortcut icon" href="favicon.ico" />
 		<style type="text/css">
 			body {
 			    color: #5d6266;
@@ -19,10 +19,19 @@
 				font-family: tahoma,"Microsoft YaHei",arial,"Hiragino Sans GB",宋体,sans-serif;
 			}
 			.ui.header .logo .w-logo{
-				background:url(./images/logo.jpg) no-repeat center center scroll;
+				background:url(./images/yema-logo.jpg) no-repeat center center scroll;
 			}
 			.ui.header .logo .w-address{
-				background:url(./images/address.jpg) no-repeat center center scroll;
+				background:url(./images/address1.jpg) no-repeat center center scroll;
+			}
+			
+			.home{
+				background:#f4f4f4;
+				padding:20px 0;
+				margin-top: -3px;
+			}
+			.home>.ui.white.grid{
+				padding: 20px;
 			}
 			
 			.media-sign{
@@ -36,6 +45,34 @@
 				background:url(./images/zhiyuan.jpg);
 				position:relative;
 			}
+			.media-sign a,.zhiyuan-sign a{
+				position:absolute;
+				height:100%;
+				width:100%;
+				top:0;
+				left:0;
+			}/*
+			.media-sign h3.ui.header,.zhiyuan-sign h3.ui.header{
+				padding-left:10px;
+				color:#fff;
+				line-height: 55px;
+				margin:0;
+				text-align:left !important;
+			}
+			.media-sign:hover h3.ui.header,.zhiyuan-sign:hover h3.ui.header{
+				text-decoration: underline;
+			}*/
+			
+			.w-right .times{
+				background: url(./images/time-bg.jpg) center center /cover;
+			}
+			.fotter{
+				background:url(./images/botto.jpg) no-repeat center center /cover;
+				color:#fff;
+				padding: 20px 0 20px 20px;
+			}
+			
+			
 			
 		</style>
 		<link rel="stylesheet" href="./css/base.css" type="text/css" />
@@ -43,7 +80,7 @@
 
 	<body>
 		<header class="ui header">
-			<div class="ui top">
+			<!--<div class="ui top">
 				<div class="ui responsive grid">
 					<div class="china">中文/EN</div>
 					<div class="float right">
@@ -51,36 +88,78 @@
 						<a class="ui btn green active sign" href="./register.html">注册</a>
 					</div>
 				</div>
-			</div>
+			</div>-->
 			<div class="logo">
 				<div class="ui responsive grid">
 					<div class="w-logo"></div>
+					<div class="w-lin">
+						<p>张志强｜<a class="ui login" href="">我的报名<small>(application)</small></a> | <a class="ui login" href="">注销<small>(Sign out)</small></a></p>
+						<p>
+							<!--<a class="ui btn login" href="./login.html">登录<br><small>(Sign in)</small></a>
+							<a class="ui btn blue active sign" href="./register.html">注册<br><small>(Registration)</small></a>-->
+							
+						</p>
+					</div>
 					<div class="w-address"></div>
 				</div>
 			</div>
 			<div class="menu">
 				<div class="ui responsive grid">
 					<ul class="nav">
-						<li><a href="./home.html"></a>首页</li>
-						<li class="hov"><a href=""></a>赛事信息
+						<li><a href="./home.html"></a>首页<br><small>Home</small></li>
+						<li class="hov"><a href=""></a>赛事信息<br><small>Information</small>
 							<div class="sect-menu">
 								<div><a href="./rule.html"></a>参赛规则</div>
-								<div><a href="./home.html"></a>主办单位</div>
+								<div><a href="./org.html"></a>主办单位</div>
 							</div>
 						</li>
 						
-						<li><a href="./news.html"></a>新闻中心</li>
-						<li class="hov">合作伙伴
+						<li class="hov"><a href="./news.html"></a>新闻中心<br><small>News Center</small>
+							<div class="sect-menu">
+								<div><a href="/media/"></a>媒体注册</div>
+								<div><a  href="/ /"></a>赛事新闻</div>
+								<div><a  href="/ /"></a>资料下载</div>
+							</div>
+						</li>
+						<li class="hov">合作伙伴<br><small>Partners</small>
 							<div class="sect-menu">
 								<div><a href="./gaf.html"></a>官方合作</div>
 								<div><a href="./mti.html"></a>媒体合作</div>
 								<div><a href="./goy.html"></a>公益合作</div>
 							</div>
 						</li>
-						<li class="active"><a href="./wash.html"></a>志愿者</li>
-						<li><a href="./active.html"></a>配套活动</li>
-						<li><a href="./about.html"></a>关于我们</li>
-						<li><a href="./join.html"></a>参赛服务</li>
+						<li class="hov active"><a href="./wash.html"></a>志愿者<br><small>Volunteer</small>
+							<div class="sect-menu">
+                <div><a href="/volunteer/"></a>志愿者报名</div>
+                <div><a href="/ /"></a>志愿者风采</div>
+								<div><a href="/volunteer_new/"></a>志愿者新闻</div>
+              </div>
+						</li>
+						<li class="hov"><a href="./active.html"></a>配套活动<br><small>Activities</small>
+							<div class="sect-menu">
+                <div><a href="/ /"></a>啦啦队</div>
+                <div><a href="/ /"></a>官风兔子</div>
+								<div><a href="/ /"></a>训练营</div>
+								<div><a href="/ /"></a>摄影大赛</div>
+              </div>
+						</li>
+						<li class="hov"><a href="./about.html"></a>关于我们<br><small>About Uts</small>
+							<div class="sect-menu">
+                <div><a href="/about_mara/"></a>关于马拉松</div>
+                <div><a href="/about_jlh/"></a>关于九龙湖</div>
+								<div><a href="/contact/"></a>联系我们</div>
+              </div>
+						</li>
+						<li class="hov"><a href="./join.html"></a>参赛服务<br><small>Service</small>
+							<div class="sect-menu">
+                <div><a href="//"></a>报名指南</div>
+                <div><a href="//"></a>领物说明</div>
+								<div><a href="//"></a>住宿交通</div>
+								<div><a href="/map/"></a>比赛线路</div>
+                <div><a href="//"></a>起点规划</div>
+								<div><a href="//"></a>终点规划</div>
+              </div>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -290,71 +369,158 @@
 				</div>
 			
 				<div class="w-right">
-					<div class="times" id="count-down">
-
+					<a href="./match1.html"><img src="./images/sign-up.jpg" width="100%"></a>
+					
+					<div class="mt-10 times" id="count-down">
+						<h3 class="ui header">比赛倒计时<br><small>Countdown</small></h3>
+						<div class="day">
+							0
+							<span>天</span>
+						</div>
+						<div class="day">
+							0
+							<span>小时</span>
+						</div>
+						<div class="day">
+							0
+							<span>分</span>
+						</div>
+						<div class="day">
+							0
+							<span>秒</span>
+						</div>
 					</div>
-
+					
 					<div class="media-sign">
-						<a href="./media.html"></a><h3 class="ui header">媒体注册</h3>
+						<a href="./media.html"></a><h3 class="ui header">媒体注册<br><small>Media Registration</small></h3>
 					</div>
 					<div class="zhiyuan-sign">
-						<a href="./wash.html"></a><h3 class="ui header">志愿者注册</h3>
+						<a href="./wash.html"></a><h3 class="ui header">志愿者注册<br><small>Volunteer Registration</small></h3>
 					</div>
-
+					
 					<div class="mt-20 check">
 						<a href=""class="math">参赛号码查询</a>
-						<a href="" class="ever active">成绩查询</a>
+						<a href="" class="ever">成绩查询</a>
 						<a href="" class="ever">成绩证书下载</a>
 					</div>
 				</div>
-				
 			</div>
 		</div>
-
+		
+		
+			
 		<div class="ft">
 			<div class="ui responsive grid">
-				<div>主办单位：浙江省体育局 宁波市镇海区人民政府</div>
-				<div>承办单位：宁波镇海区体育局、宁波镇海区风景旅游局、宁波镇海区经济合作局、宁波镇海区九龙湖旅游度假区管委会</div>
+				<div>主办单位：浙江省体育局 、宁波市镇海区人民政府</div>
+				<div>承办单位：宁波镇海区体育局、宁波镇海区风景旅游管理局、宁波镇海区经济合作局、宁波镇海区九龙湖旅游度假区管委会</div>
 				<div>赛事运营：宁波互通有无文化传播有限公司</div>
 			</div>
 		</div>
-
+		<div class="fotter">
+			<div class="ui responsive grid">
+				<div class="wide column">
+					<div class="ui list">
+						<h2 class="item">
+							<b>赛事信息</b>
+							<hr>
+						</h2>
+						<a class="ui link item" href="">竞赛规程</a>
+						<a class="ui link item" href="">主办单位</a>
+						<a class="ui link item" href="">赛事公告</a>
+					</div>
+				</div>
+				
+				<div class="wide column">
+					<div class="ui list">
+						<h2 class="item">
+							<b>新闻中心</b>
+							<hr>
+						</h2>
+						<a class="ui link item" href=""> 媒体注册</a>
+						<a class="ui link item" href=""> 赛事新闻 </a>
+						<a class="ui link item" href=""> 资料下载</a>
+					</div>
+				</div>
+				
+				<div class="wide column">
+					<div class="ui list">
+						<h2 class="item">
+							<b>合作伙伴</b>
+							<hr>
+						</h2>
+						<a class="ui link item" href=""> 赞助商</a>
+						<a class="ui link item" href=""> 官方合作</a>
+						<a class="ui link item" href=""> 媒体合作</a>
+						<a class="ui link item" href=""> 公益合作</a>
+					</div>
+				</div>
+				
+				<div class="wide column">
+					<div class="ui list">
+						<h2 class="item">
+							<b>志愿者</b>
+							<hr>
+						</h2>
+						<a class="ui link item" href=""> 志愿者报名</a>
+						<a class="ui link item" href=""> 志愿者风采</a>
+						<a class="ui link item" href=""> 志愿者新闻</a>
+					</div>
+				</div>
+				
+				<div class="wide column">
+					<div class="ui list">
+						<h2 class="item">
+							<b>配套活动</b>
+							<hr>
+						</h2>
+						<a class="ui link item" href=""> 啦啦队</a>
+						<a class="ui link item" href=""> 官方兔子</a>
+						<a class="ui link item" href=""> 训练营</a>
+						<a class="ui link item" href=""> 摄影大赛</a>
+					</div>
+				</div>
+				
+				<div class="wide column">
+					<div class="ui list">
+						<h2 class="item">
+							<b>关于我们</b>
+							<hr>
+						</h2>
+						<a class="ui link item" href=""> 关于九龙湖</a>
+						<a class="ui link item" href=""> 关于镇海</a>
+						<a class="ui link item" href=""> 关于马拉松</a>
+						<a class="ui link item" href=""> 联系我们</a>
+					</div>
+				</div>
+				
+				<div class="wide column">
+					<div class="ui list">
+						<h2 class="item">
+							<b>参赛服务</b>
+							<hr>
+						</h2>
+						<a class="ui link item" href=""> 报名指南</a>
+						<a class="ui link item" href=""> 领物说明</a>
+						<a class="ui link item" href=""> 住宿交通</a>
+						<a class="ui link item" href=""> 比赛线路</a>
+						<a class="ui link item" href=""> 起点规划</a>
+						<a class="ui link item" href=""> 终点规划</a>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+		
 	</body>
   <script type="text/javascript" src="js/jquery-2.1.0.js"></script>
   <script type="text/javascript" src="js/base.js"></script>
   <script type="text/javascript">
-    function showArea(type){
-      if(type==0){
-        $('#china-box').show();
-        $('#country-box').hide();
-      }else if(type==1){
-        $('#china-box').hide();
-        $('#country-box').show();       
-      }
-    }
-
     $(function(){
       //假数据
       var times = lake.match_times();
-      //倒计时
       lake.count_down(times, 1);
-
-      //来自
-      $(".js-area-btn").on('click', function(){
-        var val = $(this).val();
-        showArea(val);
-      });
-
-      //初始化地区显示框
-      var areaVal = $('.js-area-btn:checked').val();
-      showArea(areaVal);
-
     });
   </script>
-
+		
 </html>
-					
-					
-					
-					
-					
